@@ -7,15 +7,9 @@
 Start Room
 - Add dependencies
 ```gradle
-def lifecycler_version = "1.1.1"
-implementation "android.arch.lifecycle:extensions:$lifecycler_version"
-//noinspection LifecycleAnnotationProcessorWithJava8
-kapt "android.arch.lifecycle:compiler:$lifecycler_version"
-
-def room_version = "1.1.1"
+def room_version = "2.2.5"
 implementation "android.arch.persistence.room:runtime:$room_version"
-kapt "android.arch.persistence.room:compiler:$room_version"
-androidTestImplementation "android.arch.persistence.room:testing:$room_version"
+annotationProcessor "android.arch.persistence.room:compiler:$room_version"
 ```
 
 - SampleTable
