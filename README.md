@@ -9,7 +9,7 @@ Start Room
 ```gradle
 def room_version = "2.2.5"
 implementation "android.arch.persistence.room:runtime:$room_version"
-annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+kapt "android.arch.persistence.room:compiler:$room_version"
 ```
 
 - SampleTable
